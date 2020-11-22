@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    background: linear-gradien( rgb(196, 193, 23), rgb(228, 175, 30));
+}
+
+/* style the list item */
+
+ul li{
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+
+    /* make the list item unselecable */
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+ul li:nth-child(odd){
+    background: #f9f9f9;
+}
+
+
+ul li:hover{
+    background-color: #ddd;
+}
+
+/* style the close button  */
+.close{
+    position: absolute;
+    right: 0;
+    left: 0;
+    padding: 12px 16px 12px 16px;
+}
+
+.close:hover{
+    background: red;
+    color: white;
+}
+
+
+/* style the header */
+
+.header{
+    background: #f44336;
+    padding: 30px 40px;
+    text-align: center;
+}
+
+.header h2{
+    color: white;
+    text-transform: capitalize;
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+.header input{
+    margin-left: 30px;    padding: 10px;
+    border: 0;
+    border-radius: 2px;
+}
+
+.header .myAdd{
+    cursor: pointer;
+    background: #ddd;
+    padding: 9px;
+    border: 0;
+}
+
+.header .myAdd:hover{
+    background: rgb(163, 161, 161);
+    transition: 0.2s;
+}
