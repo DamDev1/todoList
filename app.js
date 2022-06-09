@@ -1,7 +1,16 @@
-function newElement(){
-    const item = document.getElementById("myInput").value;
-    const text = document.createTextNode(item)
-    const newItem = document.createElement("li");
-    newItem.appendChild(text)
-    document.getElementById("myUl").appendChild(newItem)
-}
+const btn = document.querySelector(".btn_add-todo") 
+const ul_list = document.querySelector(".item_container")
+
+btn.addEventListener("click", function() {
+    let inputTodo = document.querySelector(".inputTodo").value;
+
+
+    const li = document.createElement("li")
+    ul_list.appendChild(li)
+
+    const textNode = document.createTextNode(inputTodo);
+    li.appendChild(textNode)
+
+
+    console.log(inputTodo);
+})

@@ -7,17 +7,20 @@
     <title>ToDoList</title>
 </head>
 <body>
-    <div class="header" id="myDiv">
-        <h2>my to do list</h2>
-        <form id="todoForm">
-            <input type="text" id="myInput" placeholder="Title">
-            <span onclick="newElement()" class="myAdd">Add</span>
-        </form>
-    </div>
+    <div class="container">
+        <h1>My To-do List</h1>
 
-    <ul id="myUl">
-        
-    </ul>
+        <form action="#">
+            <input type="text" class="inputTodo" id="clear">
+            <button class="btn_add-todo">Submit</button>
+        </form>
+
+        <div class="todo_outlist">
+            <ul class="item_container">
+                
+            </ul>
+        </div>
+    </div>
 
 
     <script src="app.js"></script>
