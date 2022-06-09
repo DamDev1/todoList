@@ -12,5 +12,15 @@ btn.addEventListener("click", function() {
     li.appendChild(textNode)
 
 
-    console.log(inputTodo);
-})
+    li.addEventListener("dblclick", function() {
+        li.style.display = "none"
+    })
+
+    li.addEventListener("click", function() {
+        li.classList.toggle("active")
+        
+    })
+
+});
+
+

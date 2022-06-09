@@ -15,7 +15,7 @@ body{
     margin-right: auto;
     background: white;
     padding: 2em;
-    margin-top: 10%;
+    margin-top: 5%;
     color: #5795f8;
     text-align: center;
 }
@@ -50,4 +50,19 @@ button{
     list-style: none;
     cursor: pointer;
     text-transform: capitalize;
+
+}
+
+.active{
+    position: relative;
+}
+
+.active::before{
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 1px;
+    background: rgba(138, 137, 137, 0.644);
+    margin-top: 12px; 
+
 }
